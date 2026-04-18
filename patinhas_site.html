@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patinhas & Cia — Pet Care Completo</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">  
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="logo">
+    <span class="logo-paw">🐾</span>
+    Patinhas & Cia
+  </a>
+  <ul class="nav-links">
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#agendamento">Agendar</a></li>
+    <li><a href="#depoimentos">Avaliações</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#agendamento" class="nav-cta">Agendar Agora</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-tag">⭐ +1.200 pets atendidos</div>
+    <h1>Cuidado com <em>amor</em> para o seu melhor amigo</h1>
+    <p class="hero-desc">Banho & tosa, veterinária, hotel e day care — tudo em um só lugar. Atendimento especializado com agendamento online em segundos.</p>
+    <div class="hero-btns">
+      <a href="#agendamento" class="btn-primary">📅 Agendar agora</a>
+      <a href="#servicos" class="btn-secondary">Ver serviços →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">1.2k+</span>
+        <span class="stat-label">Pets atendidos</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">4.9★</span>
+        <span class="stat-label">Avaliação média</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">8 anos</span>
+        <span class="stat-label">De experiência</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="hero-blob">
+      <span class="hero-emoji-main">🐶</span>
+    </div>
+    <div class="floating-card" style="top:50px;right:-20px">
+      <span class="fc-icon">✅</span>
+      <div class="fc-text">
+        <strong>Agendado!</strong>
+        <span>Banho para Bolinha, amanhã 10h</span>
+      </div>
+    </div>
+    <div class="floating-card" style="bottom:80px;left:-30px">
+      <span class="fc-icon">💊</span>
+      <div class="fc-text">
+        <strong>Vacina em dia</strong>
+        <span>Carteirinha atualizada</span>
+      </div>
+    </div>
+    <div class="floating-card" style="top:200px;left:-40px">
+      <span class="fc-icon">⭐</span>
+      <div class="fc-text">
+        <strong>5 estrelas!</strong>
+        <span>+847 avaliações</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="section-services" id="servicos">
+  <div class="section-header">
+    <span class="section-label">O que oferecemos</span>
+    <h2 class="section-title">Tudo que seu pet <em>precisa</em></h2>
+    <p class="section-sub">Serviços completos com profissionais especializados e ambiente pensado para o conforto dos animais.</p>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-icon">🛁</span>
+      <div class="service-name">Banho & Tosa</div>
+      <p class="service-desc">Banho completo, secagem, tosa higiênica ou modelada, perfume e laço. Produtos premium e hipoalergênicos.</p>
+      <div class="service-price">A partir de R$ 60 <span>/ por porte</span></div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🩺</span>
+      <div class="service-name">Veterinária</div>
+      <p class="service-desc">Consultas clínicas, vacinação, exames laboratoriais, cirurgias e acompanhamento de saúde preventivo.</p>
+      <div class="service-price">A partir de R$ 120 <span>/ consulta</span></div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🏨</span>
+      <div class="service-name">Hotel Pet</div>
+      <p class="service-desc">Estadia segura com quarto individual, monitoramento 24h, passeios e atualização de fotos para os tutores.</p>
+      <div class="service-price">A partir de R$ 85 <span>/ diária</span></div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">☀️</span>
+      <div class="service-name">Day Care</div>
+      <p class="service-desc">Socialização, brincadeiras supervisionadas e muito carinho. Ideal para pets que ficam sozinhos durante o dia.</p>
+      <div class="service-price">A partir de R$ 55 <span>/ dia</span></div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🐾</span>
+      <div class="service-name">Adestramento</div>
+      <p class="service-desc">Sessões individuais e em grupo com metodologia positiva. Obediência básica, sociabilização e comportamento.</p>
+      <div class="service-price">A partir de R$ 150 <span>/ sessão</span></div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🛒</span>
+      <div class="service-name">Pet Shop</div>
+      <p class="service-desc">Ração premium, petiscos, brinquedos, higiene e acessórios. Compre na loja física ou online com entrega.</p>
+      <div class="service-price">Ver produtos →</div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENDAMENTO -->
+<section class="section-booking" id="agendamento">
+  <div class="booking-wrapper">
+    <div class="booking-info">
+      <span class="section-label">Agendamento Online</span>
+      <h2 class="section-title">Agende em <em>menos de 2 minutos</em></h2>
+      <p class="section-sub">Escolha o serviço, a data e o horário. Confirmação imediata pelo WhatsApp.</p>
+
+      <div class="booking-features">
+        <div class="bf-item"><div class="bf-icon">⚡</div> Confirmação instantânea via WhatsApp</div>
+        <div class="bf-item"><div class="bf-icon">🔔</div> Lembrete automático 24h antes</div>
+        <div class="bf-item"><div class="bf-icon">♻️</div> Reagendar ou cancelar fácil</div>
+        <div class="bf-item"><div class="bf-icon">🐕</div> Cadastre todos os seus pets</div>
+        <div class="bf-item"><div class="bf-icon">📋</div> Histórico completo de atendimentos</div>
+      </div>
+    </div>
+
+    <div class="booking-form" id="bookingForm">
+      <div class="form-title">Novo Agendamento</div>
+      <div class="form-subtitle">Passo <span id="stepNum">1</span> de 3</div>
+
+      <div class="form-step-indicator">
+        <div class="step-dot active" id="dot1"></div>
+        <div class="step-dot" id="dot2"></div>
+        <div class="step-dot" id="dot3"></div>
+      </div>
+
+      <!-- STEP 1: Serviço -->
+      <div class="step-section active" id="step1">
+        <div class="form-group">
+          <label>Escolha o serviço</label>
+          <div class="service-selector">
+            <div class="service-opt" onclick="selectService(this,'Banho & Tosa')">
+              <span class="opt-icon">🛁</span> Banho & Tosa
+            </div>
+            <div class="service-opt" onclick="selectService(this,'Veterinária')">
+              <span class="opt-icon">🩺</span> Veterinária
+            </div>
+            <div class="service-opt" onclick="selectService(this,'Hotel Pet')">
+              <span class="opt-icon">🏨</span> Hotel Pet
+            </div>
+            <div class="service-opt" onclick="selectService(this,'Day Care')">
+              <span class="opt-icon">☀️</span> Day Care
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nome do pet</label>
+            <input class="form-control" id="petName" type="text" placeholder="Ex: Bolinha">
+          </div>
+          <div class="form-group">
+            <label>Espécie</label>
+            <select class="form-control" id="petType">
+              <option value="">Selecione</option>
+              <option>🐶 Cachorro</option>
+              <option>🐱 Gato</option>
+              <option>🐰 Coelho</option>
+              <option>🦜 Ave</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-nav">
+          <span></span>
+          <button class="btn-form-next" onclick="goStep(2)">Escolher data →</button>
+        </div>
+      </div>
+
+      <!-- STEP 2: Data e hora -->
+      <div class="step-section" id="step2">
+        <div class="cal-month-nav">
+          <button onclick="changeMonth(-1)">‹</button>
+          <span class="cal-month-name" id="calMonthName">Abril 2026</span>
+          <button onclick="changeMonth(1)">›</button>
+        </div>
+        <div class="calendar-grid" id="calendarGrid"></div>
+
+        <div class="form-group">
+          <label>Horário disponível</label>
+          <div class="time-slots" id="timeSlots">
+            <div class="time-slot" onclick="selectTime(this)">08:00</div>
+            <div class="time-slot" onclick="selectTime(this)">09:00</div>
+            <div class="time-slot unavailable">10:00</div>
+            <div class="time-slot" onclick="selectTime(this)">11:00</div>
+            <div class="time-slot unavailable">14:00</div>
+            <div class="time-slot" onclick="selectTime(this)">15:00</div>
+            <div class="time-slot" onclick="selectTime(this)">16:00</div>
+            <div class="time-slot" onclick="selectTime(this)">17:00</div>
+          </div>
+        </div>
+
+        <div class="form-nav">
+          <button class="btn-form-back" onclick="goStep(1)">← Voltar</button>
+          <button class="btn-form-next" onclick="goStep(3)">Seus dados →</button>
+        </div>
+      </div>
+
+      <!-- STEP 3: Dados pessoais -->
+      <div class="step-section" id="step3">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Seu nome</label>
+            <input class="form-control" id="ownerName" type="text" placeholder="Nome completo">
+          </div>
+          <div class="form-group">
+            <label>WhatsApp</label>
+            <input class="form-control" id="ownerPhone" type="tel" placeholder="(11) 99999-9999">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>E-mail (opcional)</label>
+          <input class="form-control" id="ownerEmail" type="email" placeholder="seu@email.com">
+        </div>
+        <div class="form-group">
+          <label>Observações</label>
+          <input class="form-control" id="obs" type="text" placeholder="Alergias, comportamento, etc.">
+        </div>
+        <div class="form-nav">
+          <button class="btn-form-back" onclick="goStep(2)">← Voltar</button>
+          <button class="btn-form-next" onclick="submitBooking()">✅ Confirmar agendamento</button>
+        </div>
+      </div>
+
+      <!-- SUCCESS -->
+      <div class="booking-success" id="bookingSuccess">
+        <div class="success-icon">🎉</div>
+        <div class="success-title">Agendado com sucesso!</div>
+        <p class="success-desc">Você receberá a confirmação pelo WhatsApp em instantes.<br>Lembrete automático 24h antes. Até breve! 🐾</p>
+        <br>
+        <button class="btn-form-next" onclick="resetForm()" style="margin: 0 auto; display: flex;">Novo agendamento</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="section-reviews" id="depoimentos">
+  <div class="section-header">
+    <span class="section-label">Avaliações</span>
+    <h2 class="section-title">O que nossos clientes <em>dizem</em></h2>
+    <p class="section-sub">Mais de 847 avaliações com média de 4.9 estrelas no Google.</p>
+  </div>
+
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">⭐⭐⭐⭐⭐</div>
+      <p class="review-text">"Meu dog fica tão feliz depois do banho aqui! A equipe é super cuidadosa e o Bolinha sai cheiroso e animado. Melhor pet shop da cidade!"</p>
+      <div class="review-author">
+        <div class="review-avatar">👩</div>
+        <div><div class="review-name">Ana Carolina S.</div><div class="review-pet">🐶 Tutora do Bolinha</div></div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">⭐⭐⭐⭐⭐</div>
+      <p class="review-text">"Deixei minha gata no hotel por uma semana e recebi fotos todos os dias! Me senti super segura. Voltarei com certeza."</p>
+      <div class="review-author">
+        <div class="review-avatar">👨</div>
+        <div><div class="review-name">Marcos Oliveira</div><div class="review-pet">🐱 Tutor da Mimi</div></div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">⭐⭐⭐⭐⭐</div>
+      <p class="review-text">"A veterinária foi incrível com meu coelho. Muito paciente e explicou tudo com detalhes. Agendamento online é super prático!"</p>
+      <div class="review-author">
+        <div class="review-avatar">👩</div>
+        <div><div class="review-name">Fernanda Lima</div><div class="review-pet">🐰 Tutora do Pipoca</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="section-about" id="sobre">
+  <div class="about-grid">
+    <div class="about-visual">
+      <div class="about-blob">🏡</div>
+      <div class="about-badge">
+        <strong>8+</strong>
+        <span>Anos de cuidado</span>
+      </div>
+    </div>
+    <div class="about-content">
+      <span class="section-label" style="margin-bottom:1rem;display:inline-block">Nossa história</span>
+      <h2 class="section-title">Nascemos do <em>amor</em> pelos animais</h2>
+      <p class="section-sub">A Patinhas & Cia nasceu em 2016 com um único propósito: oferecer cuidado de qualidade para pets de todas as raças e tamanhos, com o carinho de quem realmente ama animais.</p>
+      <div class="about-points" style="margin-top:1.5rem">
+        <div class="about-point">
+          <div class="ap-icon">👩‍⚕️</div>
+          <div class="ap-text"><strong>Equipe especializada</strong><p>Médicos veterinários, tosadores certificados e cuidadores treinados.</p></div>
+        </div>
+        <div class="about-point">
+          <div class="ap-icon">🏠</div>
+          <div class="ap-text"><strong>Ambiente pensado para pets</strong><p>Espaço climatizado, higienizado e seguro para todos os animais.</p></div>
+        </div>
+        <div class="about-point">
+          <div class="ap-icon">📱</div>
+          <div class="ap-text"><strong>Tecnologia a serviço do cuidado</strong><p>Agendamento online, histórico digital e atualizações em tempo real.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="logo">🐾 Patinhas & Cia</a>
+      <p>Cuidado especializado para pets com amor, tecnologia e dedicação desde 2016.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Serviços</h4>
+      <ul>
+        <li><a href="#">Banho & Tosa</a></li>
+        <li><a href="#">Veterinária</a></li>
+        <li><a href="#">Hotel Pet</a></li>
+        <li><a href="#">Day Care</a></li>
+        <li><a href="#">Adestramento</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="#">Sobre nós</a></li>
+        <li><a href="#">Nossa equipe</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Trabalhe conosco</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="#">📍 Rua dos Pets, 123</a></li>
+        <li><a href="#">📞 (11) 99999-0000</a></li>
+        <li><a href="#">✉️ oi@patinhasecia.com</a></li>
+        <li><a href="#">Seg–Sáb: 8h–19h</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Patinhas & Cia. Todos os direitos reservados.</span>
+    <span>Feito com 🐾 para os pets do Brasil</span>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/5511999990000" class="whatsapp-float" target="_blank" title="Fale pelo WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.532 5.853L.057 23.714a.5.5 0 0 0 .614.637l6.057-1.595A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.647-.518-5.149-1.418l-.37-.219-3.836 1.009 1.026-3.735-.24-.384A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+  </svg>
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
