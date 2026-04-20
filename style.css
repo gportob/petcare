@@ -1,5 +1,5 @@
 :root {
-    --verde: #2D6A4F;
+    --verde: #1f4b37;
     --verde-claro: #52B788;
     --creme: #F8F4EE;
     --terracota: #C45C3A;
@@ -12,6 +12,133 @@
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  /* Acessibilidade: tamanho de fonte mínimo */
+  html { font-size: 100%; }
+  body, input, select, textarea, button {
+    font-size: 1rem;
+  }
+
+  /* Acessibilidade: espaçamento mínimo para clique */
+  a, button, .service-opt, .time-slot, .nav-cta, .btn-primary, .btn-secondary {
+    min-height: 44px;
+    min-width: 44px;
+    box-sizing: border-box;
+  }
+
+  /* Acessibilidade: cursor para elementos clicáveis */
+  [tabindex], .service-opt, .time-slot, .btn-primary, .btn-secondary, .nav-cta, .btn-form-next, .btn-form-back {
+    cursor: pointer;
+  }
+
+  /* Acessibilidade: modo alto contraste */
+  @media (forced-colors: active) {
+    body, .section-services, .section-about, .section-reviews, .booking-form, .service-card, .review-card {
+      background: Canvas !important;
+      color: CanvasText !important;
+      border-color: GrayText !important;
+    }
+    .btn-primary, .btn-secondary, .nav-cta, .btn-form-next, .btn-form-back {
+      background: ButtonFace !important;
+      color: ButtonText !important;
+      border: 2px solid ButtonText !important;
+    }
+    .form-control {
+      background: Field !important;
+      color: FieldText !important;
+      border: 2px solid GrayText !important;
+    }
+    .service-opt.selected, .time-slot.selected, .cal-day.selected {
+      background: Highlight !important;
+      color: HighlightText !important;
+    }
+    a, a:visited {
+      color: LinkText !important;
+    }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+      outline: 2px solid Highlight !important;
+    }
+  }
+
+  /* Acessibilidade: remover outline:none de modo geral */
+  a, button, input, select, textarea {
+    outline: revert-layer;
+  }
+
+  /* Acessibilidade: foco visível */
+  a, button, input, select, textarea {
+    outline: none;
+    transition: box-shadow 0.2s, border-color 0.2s;
+  }
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 2px solid var(--terracota);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(196,92,58,0.18);
+    z-index: 2;
+  }
+
+  /* Contraste para botões e links */
+  .btn-primary:focus-visible, .btn-secondary:focus-visible, .btn-form-next:focus-visible, .btn-form-back:focus-visible, .nav-cta:focus-visible {
+    outline: 2px solid var(--mel);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(233,168,75,0.18);
+  }
+
+  /* Aumentar contraste de texto em botões principais */
+  .btn-primary, .nav-cta {
+    color: #fff !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  }
+
+  /* Melhorar contraste de .section-label em fundos claros */
+  .section-label {
+    background: rgba(45,106,79,0.13);
+    color: var(--verde);
+  }
+
+  /* Ícones acessíveis: garantir tamanho e contraste */
+  [role="img"] {
+    font-size: 1.2em;
+    vertical-align: middle;
+    color: inherit;
+  }
+
+  /* Navegação por teclado para .service-opt */
+  .service-opt {
+    cursor: pointer;
+  }
+  .service-opt:focus-visible {
+    outline: 2px solid var(--terracota);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(196,92,58,0.18);
+    z-index: 2;
+  }
+
+  /* Melhorar contraste de .form-control em foco */
+  .form-control:focus {
+    border-color: var(--terracota);
+    background: #fff;
+  }
+
+  /* Placeholder mais visível */
+  ::placeholder {
+    color: #888;
+    opacity: 1;
+  }
+
+  /* Links no footer: foco visível */
+  .footer-col ul li a:focus-visible {
+    outline: 2px solid var(--mel);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(233,168,75,0.18);
+  }
+
+  /* WhatsApp float: foco visível */
+  .whatsapp-float:focus-visible {
+    outline: 2px solid #25D366;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(37,211,102,0.18);
+  }
   
   html { scroll-behavior: smooth; }
 
@@ -230,7 +357,7 @@
     color: var(--escuro);
     margin-bottom: 0.8rem;
   }
-  .section-title em { font-style: italic; color:rgba(255,255,255,0.15); }
+  .section-title em { font-style: italic; color: #1A1A1A; font-weight: bold; letter-spacing: 0.5px; }
 
   .section-sub { color: var(--cinza); font-size: 1rem; max-width: 480px; margin: 0 auto; line-height: 1.6; }
 
@@ -512,15 +639,22 @@
 
   .about-badge {
     position: absolute; bottom: 20px; right: -10px;
-    background: var(--mel);
-    color: white; border-radius: 16px;
+    background: #1A1A1A;
+    color: #FFF;
+    border-radius: 16px;
     padding: 16px 20px; text-align: center;
     font-family: 'Fraunces', serif;
     box-shadow: var(--sombra);
   }
-  .about-badge strong { font-size: 2.2rem; display: block; line-height: 1; }
-  .about-badge span { font-size: 0.78rem; font-family: 'DM Sans', sans-serif; }
-
+  .about-badge strong {
+    color: #FFF;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  .about-badge span {
+    color: #FFF;
+    opacity: 0.92;
+  }
   .about-content .section-title { text-align: left; margin-bottom: 1rem; }
   .about-content .section-sub { text-align: left; margin: 0 0 2rem; }
 
