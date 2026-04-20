@@ -3,16 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Patinhas & Cia — Pet Care Completo</title>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>Patinhas & Cia — Pet Care Completo em São Paulo</title>
+<meta name="description" content="Banho, tosa, veterinária, hotel, day care e pet shop em São Paulo. Agende online para seu pet com atendimento especializado.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Patinhas & Cia — Pet Care Completo">
+<meta property="og:description" content="Banho, tosa, veterinária, hotel, day care e pet shop em São Paulo. Agende online para seu pet.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://patinhasecia.com">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Patinhas & Cia">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" as="style">
 <link rel="stylesheet" href="style.css">  
+<link rel="canonical" href="https://patinhasecia.com">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PetStore",
+  "name": "Patinhas & Cia",
+  "image": "https://patinhasecia.com/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua dos Pets, 123",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "postalCode": "01234-567",
+    "addressCountry": "BR"
+  },
+  "telephone": "+5511999990000",
+  "url": "https://patinhasecia.com"
+}
+</script>
 </head>
-<body>
 
-<!-- NAV -->
-<nav id="navbar">
-  <a href="#" class="logo">
-    <span class="logo-paw">🐾</span>
+<body>
+<header>
+<nav id="navbar" aria-label="Navegação principal">
+  <a href="#" class="logo" aria-label="Página inicial Patinhas & Cia">
+    <span class="logo-paw" role="img" aria-label="Pata">🐾</span>
     Patinhas & Cia
   </a>
   <ul class="nav-links">
@@ -22,10 +50,12 @@
     <li><a href="#sobre">Sobre</a></li>
     <li><a href="#agendamento" class="nav-cta">Agendar Agora</a></li>
   </ul>
-  <div class="hamburger" onclick="toggleMenu()">
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Abrir menu de navegação">
     <span></span><span></span><span></span>
-  </div>
+  </button>
 </nav>
+</header>
+<main id="main-content">
 
 <!-- HERO -->
 <section class="hero" id="home">
