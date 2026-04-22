@@ -357,7 +357,7 @@
     color: var(--escuro);
     margin-bottom: 0.8rem;
   }
-  .section-title em { font-style: italic; color: #1A1A1A; font-weight: bold; letter-spacing: 0.5px; }
+  .section-title em { font-style: italic; color: #48c38b; font-weight: bold; letter-spacing: 0.5px; }
 
   .section-sub { color: var(--cinza); font-size: 1rem; max-width: 480px; margin: 0 auto; line-height: 1.6; }
 
