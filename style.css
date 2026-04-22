@@ -188,7 +188,7 @@
   }
   .nav-cta:hover { background: var(--terracota) !important; transform: scale(1.04); }
 
-  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+  .hamburger { flex-direction: column; gap: 6px;cursor: pointer; background: none; border: none; justify-content: center; }
   .hamburger span { width: 24px; height: 2px; background: var(--escuro); border-radius: 2px; transition: all 0.3s; }
 
   /* ===== HERO ===== */
@@ -771,4 +771,5 @@
     .hero-emoji-main { font-size: 5rem; }
     .floating-card:nth-child(3) { display: none; }
     .footer-grid { grid-template-columns: 1fr; }
+    .about-badge { position: relative; }
   }
